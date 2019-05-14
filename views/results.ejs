@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Results</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    </head>
+      <body>
+          <div id="results">
+             <img src="<%=result.Poster%>">
+             <p><strong>Title</strong> - <span><%=result.Title%></span></p>
+             <p><strong>Year of release</strong> - <span><%=result.Released%></span></p>
+             <p><strong>Genre</strong> - <span><%=result.Genre%></span></p>
+             <p><strong>Director</strong> - <span><%=result.Director%></span></p>
+             <p><strong>Actors</strong> - <span><%=result.Actors%></span></p>
+             <p><strong>Plot</strong> - <span><%=result.Plot%></span></p>
+             <p><strong>Language</strong> - <span><%=result.Language%></span></p>
+             <p><strong>Country</strong> - <span><%=result.Country%></span></p>
+            <%if(user!=undefined){%>
+             <%if(userrating==undefined){%> 
+              <form action="/addrating/<%=result.Title%>" method="POST">
+              <label><strong>Rating</strong><input type="range" min="1.0" max="5.0" step=".1" name="rating" value="1.0" id="rating"><a href="#" id="rateshow"></a></label><br>
+              <input type="submit" id="ratingsubmit" value="Rate">
+              </form>
+             <%}else{%>
+               <p><strong>Your rating</strong> - <span><%=userrating%></span></p>
+             <%}%>
+            <%}%>   
+          </div>
+          <div id="reviewshowdiv">
+           <%if(user!=undefined){%> 
+            <form action="/addreview/<%=result.Title%>" method="POST">
+             <textarea name="review" id="addreview" placeholder="Enter review"></textarea><br>
+             <input type="submit" value="Add review" id="reviewsubmit">
+             </form>
+            <%}%>
+            <%if(reviews!=undefined){%>  
+              <%for(var i=0;i<reviews.length;i++){%>
+               <div class="showreview">
+                  <p class="rev"><strong><%=reviews[i].username%></strong> - <span class="revspan"><%=reviews[i].review%></span></p>
+                  <%if(reviews[i].username==user){%>
+                   <a href="#" id="editreview" name="<%=reviews[i].revID%>">Edit</a>
+                   <form action="/delete/review/<%=reviews[i].revID%>?_method=DELETE" method="POST">
+                    <input type="submit" id="delsubmit" value="Delete">
+                  </form>
+                  <%}%>
+               </div>
+              <%}%>
+              <%}%>
+            <%if(rating!=undefined){%> 
+              <%for(var i=0;i<rating.length;i++){%>
+                <div class="showrating">
+                  <p class="rev"><strong><%=rating[i].username%></strong> - <span class="revspan"><%=rating[i].rating%></span></p>
+                </div>
+               <%}%>
+            <%}%>     
+          </div> 
+          <%if(user!=undefined){%>
+            <script src="/edit.js"></script>
+          <%}%>   
+          <script src="/change.js"></script>
+      </body>
+</html>

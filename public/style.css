@@ -1,0 +1,792 @@
+.landing
+{
+    background:url("./movie.jpg");
+    background-repeat: round;
+    background-size: cover;
+    margin:0;
+}
+.landing-blur
+{
+    background:url("./movie_blurred.jpg");
+    background-repeat: round;
+    background-size: cover;
+    margin:0;
+}
+#navbar
+{
+    border-radius: 5px;
+    height:6%;
+    box-shadow: 0 0 1px gainsboro;
+    padding-top:10px;
+}
+.movies a
+{
+    text-decoration: none;
+    color:white;
+    font-family: Open Sans Condensed;
+}
+.movies
+{
+    border:1px green solid;
+    padding:10px;
+    background:green;
+    border-radius: 5px;
+    margin:auto;
+    float: none;
+    width:10%;
+    text-align: center;
+    margin-top:10%;
+}
+.movies-hover
+{
+    border:1px green solid;
+    background:none;
+}
+.add-movies a
+{
+    text-decoration: none;
+    color:white;
+    font-family: Open Sans Condensed;
+}
+.add-movies
+{
+    border:1px orange solid;
+    padding:10px;
+    background:orange;
+    border-radius: 5px;
+    margin:auto;
+    float: none;
+    width:10%;
+    text-align: center;
+    margin-top:10%;
+}
+.add-movies-hover
+{
+    border:1px orange solid;
+    background: none;
+    color:black;
+}
+#signindiv
+{
+    border:1px gray solid;
+    padding:5px;
+    width:60px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: auto;
+}
+#reviewdiv
+{
+    padding:5px;
+    padding-left: 0;
+    width:145px;
+    border-radius: 5px;
+    font-weight: 800;
+    float: left;
+}
+.formdiv
+{
+    width:45%;
+    height:60%;
+    background: gainsboro;
+    border-radius: 5px;
+    margin-left:30%;
+    margin-top:2%;
+    box-shadow: 0 0 3px white;
+    transition: .2s linear;
+    display: none;
+}
+#sign
+{
+    text-decoration: none;
+    color:white;
+}
+#review
+{
+    font-family: Dancing Script;
+    text-decoration: none;
+    color:gray;
+    font-size:20px;
+}
+#reviewshowdiv
+{
+    width:50%;
+    margin:auto;
+}
+#user
+{
+    padding: 10px;
+}
+#forgot a
+{
+    text-decoration: none;
+    color:rgb(10, 61, 82);
+    font-family: Jura;
+}
+#forgot a:hover
+{
+    text-decoration: underline;
+}
+#signup a
+{
+ 
+    text-decoration: none;
+    color:rgb(10, 61, 82);
+    font-family: Jura;
+}
+#signup a:hover
+{
+    text-decoration: underline;
+}
+#signup
+{
+    margin-left: 50%;
+    width:20%;
+}
+#forgot
+{
+    margin-left: 10%;
+    width:40%;
+    float: left;
+}
+#userid
+{
+    width:90%;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top:5%;
+    border:1px gray solid;
+    border-radius: 5px;
+    transition: .2s linear;
+}
+#fname
+{
+    width:90%;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top:5%;
+    border:1px gray solid;
+    border-radius: 5px;
+}
+#lname
+{
+    width:90%;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top:5%;
+    border:1px gray solid;
+    border-radius: 5px;
+}
+#retype-password
+{
+    width:90%;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top:5%;
+    border:1px gray solid;
+    border-radius: 5px;
+}
+#fname:focus
+{
+    border:1px black solid;
+    outline: none;
+}
+#lname:focus
+{
+    border:1px black solid;
+    outline: none;
+}
+#retype-password:focus
+{
+    border:1px black solid;
+    outline: none;
+}
+#userid:focus
+{
+    border:1px black solid;
+    padding:17px;
+    outline: none;
+}
+#password
+{
+    width:90%;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top:5%;
+    border:1px gray solid;
+    border-radius: 5px;
+    transition: .2s linear;
+}
+#signpassword
+{
+    width:90%;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top:5%;
+    border:1px gray solid;
+    border-radius: 5px;
+}
+#password:focus
+{
+    border:1px black solid;
+    outline: none;
+    padding:17px;
+}
+#signpassword:focus
+{
+    border:1px black solid;
+    outline: none;
+}
+#submit
+{
+    width:90%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-top:3%;
+    border:1px green solid;
+    border-radius: 5px;
+    background:none;
+}
+#close
+{
+    margin-top:3%;
+    margin-left: 95%;
+}
+#showmsg
+{
+    color:white;
+    text-align: center;
+    font-weight: 600;
+    background:rgb(9, 51, 68);
+    border:1px rgb(9, 51, 68) solid;
+    padding:8px;
+    border-radius: 5px;
+    width:40%;
+    margin:auto;
+}
+#userdivimg
+{
+    width:60%;
+    background: white;
+    border-radius: 20px;
+}
+#userdiv
+{
+    list-style: none;
+    text-align: left;
+    width:3%;
+    margin-left: 90%;
+    margin-top:0;
+    padding:0;
+}
+#userdiv li ul
+{
+    text-align: left;
+    list-style: none;
+    padding:0;
+    box-shadow: 0 0 3px gray;
+    display: none;
+}
+#userdiv li ul li
+{
+    padding:15px;
+    background: rgb(238, 236, 236);
+    opacity:.8;
+}
+#userdiv li ul li a
+{
+    text-decoration: none;
+    color:rgb(34, 100, 126);
+    font-family: Jura;
+    font-weight: 600;
+}
+#userdiv li:hover ul
+{
+    display: inline-block;
+}
+#first
+{
+   border-top-left-radius: 5px;
+}
+#last
+{
+    border-bottom-right-radius: 5px;
+}
+#searchdiv
+{
+    margin-left:30%;
+    width:45%;
+    margin-top:2%;
+}
+#search
+{
+    border:1px gray solid;
+    width:100%;
+    padding:15px;
+    box-shadow: 0 0 3px gainsboro;
+    border-radius: 10px;
+    transition: .2s linear;
+}
+#search:focus
+{
+    outline: none;
+    padding:17px;
+}
+#showimg
+{
+    width:10%;
+}
+#search-res
+{
+    font-family: Jura;
+    color:rgb(11, 47, 61);
+    list-style: none;
+}
+#search-res a
+{
+    text-decoration: none;
+}
+#search-res:hover
+{
+    background:gainsboro;
+}
+#results
+{
+    width:30%;
+    margin:auto;
+}
+#results img
+{
+    width:100%;
+    height:70%;
+    margin-bottom: 10%;
+}
+#results p,label
+{
+    font-family: Exo;
+}
+span
+{
+    color:rgb(12, 75, 100);
+}
+#rateshow
+{
+    text-decoration: none;
+    font-family: Jura;
+    font-size: 40px;
+}
+#rating:focus
+{
+    outline: none;
+}
+#ratingsubmit
+{
+    background: green;
+    border:1px green solid;
+    border-radius: 5px;
+    padding:5px;
+    color:black;
+}
+#review
+{
+    margin:auto;
+    width:50%;
+}
+#addreview
+{
+    width:100%;
+    padding:30px;
+    border:1px gray solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.formdiv-res
+{
+    margin-left: 30%;
+    margin-top:0;
+    background:white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;    
+}
+#addreview:focus
+{
+    outline: none;
+    border: 1px black solid;
+}
+#reviewsubmit
+{
+    background:skyblue;
+    border:1px skyblue solid;
+    padding:5px;
+    border-radius: 5px;
+    margin-left:40%;
+}
+.rev
+{
+    font-family: Open sans;
+}
+.revspan
+{
+    font-family: Open sans condensed;
+}
+#editreview
+{
+    font-family: Jura;
+    text-decoration: none;
+    color: rgb(13, 64, 83);
+    font-size:18px;
+    float: left;
+}
+#editreview:hover
+{
+    text-decoration: underline;
+}
+.showreview
+{
+    border:1px gainsboro solid;
+    border-radius: 5px;
+}
+.showrating
+{
+    margin-top:2%;
+    border:1px gainsboro solid;
+    border-radius: 5px;
+}
+#delsubmit
+{
+    border:1px red solid;
+    background: red;
+    color:black;
+    padding:5px;
+    border-radius: 5px;
+    width:100%;
+}
+.showreview form
+{
+    width:10%;
+    margin-left: 10%;
+}
+#resetdiv
+{
+    width:40%;
+    height:55%;
+    background: gainsboro;
+    border-radius: 5px;
+    margin-left:30%;
+    margin-top:2%;
+    box-shadow: 0 0 3px white;
+}
+@media screen and (max-width:720px)
+{
+    #reviewsubmit
+   {
+    background:skyblue;
+    border:1px skyblue solid;
+    padding:5px;
+    border-radius: 5px;
+    margin-left:35%;
+   }
+    #reviewshowdiv
+   {
+    width:80%;
+   }
+    #searchdiv
+    {
+        margin-left:10%;
+        width:80%;
+        margin-top:2%;
+    }
+    .formdiv
+    {
+        width:80%;
+        height:60%;
+        background: gainsboro;
+        border-radius: 5px;
+        margin-left:10%;
+        margin-top:2%;
+        box-shadow: 0 0 3px white;
+        transition: .2s linear;
+        display: none;
+    }
+    #resetdiv
+   {
+    width:80%;
+    height:55%;
+    background: gainsboro;
+    border-radius: 5px;
+    margin-left:10%;
+    margin-top:2%;
+    box-shadow: 0 0 3px white;
+   }
+    .formdiv-res
+    {
+    margin-left: 10%;
+    margin-top:0;
+    background:white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;    
+   }   
+   #userdivimg
+   {
+    width:60%;
+    background: white;
+    border-radius: 20px;
+   }
+#userdiv
+{
+    list-style: none;
+    text-align:left;
+    width:5%;
+    margin-left: 85%;
+    margin-top:0;
+    padding:0;
+}
+#userdiv li ul
+{
+    text-align: left;
+    list-style: none;
+    padding:0;
+    box-shadow: 0 0 3px gray;
+    display: none;
+}
+#userdiv li ul li
+{
+    padding:12px;
+    background: rgb(238, 236, 236);
+    opacity:.8;
+}
+#userdiv li ul li a
+{
+    text-decoration: none;
+    color:rgb(34, 100, 126);
+    font-family: Jura;
+    font-weight: 600;
+}
+#userdiv li:hover ul
+{
+    display: inline-block;
+}
+ #results
+ {
+    width:80%;
+    margin:auto;
+ }
+}
+@media screen and (max-width:480px)
+{
+    #rating
+    {
+     width:92%;
+    }
+    #reviewshowdiv
+    {
+     width:92%;
+    }
+    #searchdiv
+    {
+        margin-left:5%;
+        width:92%;
+        margin-top:2%;
+    }
+    .formdiv
+    {
+        width:92%;
+        height:60%;
+        background: gainsboro;
+        border-radius: 5px;
+        margin-left:5%;
+        margin-top:2%;
+        box-shadow: 0 0 3px white;
+        transition: .2s linear;
+        display: none;
+    }
+    #resetdiv
+    {
+     width:92%;
+     height:55%;
+     background: gainsboro;
+     border-radius: 5px;
+     margin-left:5%;
+     margin-top:2%;
+     box-shadow: 0 0 3px white;
+    }
+    .formdiv-res
+    {
+    margin-left: 5%;
+    margin-top:0;
+    background:white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;    
+   }   
+   #signup
+  {
+    margin: auto;
+    width:100%;
+    text-align: center;
+  }
+   #forgot
+   {
+    margin:auto;
+    width:100%;
+    float: none;
+    text-align: center;
+   }
+   #userdivimg
+   {
+    width:60%;
+    background: white;
+    border-radius: 20px;
+   }
+   #userdiv
+   {
+    list-style: none;
+    text-align:left;
+    width:7%;
+    margin-left: 78%;
+    margin-top:0;
+    padding:0;
+}
+#userdiv li ul
+{
+    text-align: left;
+    list-style: none;
+    padding:0;
+    box-shadow: 0 0 3px gray;
+    display: none;
+}
+#userdiv li ul li
+{
+    padding:12px;
+    background: rgb(238, 236, 236);
+    opacity:.8;
+}
+#userdiv li ul li a
+{
+    text-decoration: none;
+    color:rgb(34, 100, 126);
+    font-family: Jura;
+    font-weight: 600;
+}
+#userdiv li:hover ul
+{
+    display: inline-block;
+}
+}
+@media screen and (max-width:360px)
+{
+    #rating
+    {
+     width:85%;
+    }
+    #reviewshowdiv
+    {
+     width:98%;
+    }
+    #userdiv
+   {
+    list-style: none;
+    text-align:left;
+    width:18%;
+    margin-top:0;
+    margin:auto;
+    padding:0;
+   }
+    #searchdiv
+    {
+        margin-left: 1%;
+        width:98%;
+        margin-top:2%;
+    }
+    .formdiv
+    {
+        margin-left: 1%;
+        width:98%;
+        height:60%;
+        background: gainsboro;
+        border-radius: 5px;
+        margin-top:2%;
+        box-shadow: 0 0 3px white;
+        transition: .2s linear;
+        display: none;
+    }
+    #resetdiv
+    {
+     width:98%;
+     height:55%;
+     background: gainsboro;
+     border-radius: 5px;
+     margin-left:1%;
+     margin-top:2%;
+     box-shadow: 0 0 3px white;
+    }
+    .formdiv-res
+    {
+    margin-top:0;
+    margin-left: 1%;
+    background:white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;    
+   }   
+}
+@media screen and (max-width:220px)
+{
+    #reviewshowdiv
+    {
+     width:100%;
+    }
+   
+    #rating
+    {
+     width:80%;
+    }
+    #reviewsubmit
+    {
+     background:skyblue;
+     border:1px skyblue solid;
+     padding:5px;
+     border-radius: 5px;
+     margin-left:20%;
+    }
+    #reviewshowdiv
+    {
+     width:92%;
+    } 
+    #signindiv
+   {
+    border:1px gray solid;
+    padding:5px;
+    width:60px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;  
+   } 
+   #reviewdiv
+   {
+    padding:2px;
+    padding-left: 0;
+    width:145px;
+    border-radius: 5px;
+    font-weight: 800;
+    margin:auto;
+    float: none;
+   }
+   #navbar
+   {
+    border-radius: 5px;
+    height:10%;
+    box-shadow: 0 0 1px gainsboro;
+    padding-top:10px; 
+   }
+}
